@@ -132,6 +132,7 @@
     <ClCompile Include="tapl_args.ixx" />
     <ClCompile Include="tapl_main.cpp" />
     <ClCompile Include="tapl.ixx" />
+    <ClCompile Include="tapl_utility.ixx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
