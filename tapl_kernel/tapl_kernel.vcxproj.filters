@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tapl_main.cpp">
+    <ClCompile Include="tapl_args.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tapl_utility.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tapl.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

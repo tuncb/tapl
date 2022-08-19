@@ -30,6 +30,8 @@
 *.exe
 *.out
 *.app
-/tapl/x64/
-/tapl/.vs/
-/tapl/*.user
+
+#vs files
+x64/
+.vs/
+*.user
