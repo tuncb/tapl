@@ -4,8 +4,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tapl", "tapl\tapl.vcxproj", "{FF2E5BAC-AA10-4B8D-9843-4D80B0EC5E40}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4B8925B6-4042-4B1F-AA4D-F82531C9B948} = {4B8925B6-4042-4B1F-AA4D-F82531C9B948}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tapl_tester", "tapl_tester\tapl_tester.vcxproj", "{69B64FDB-A9C4-42A8-9849-4F38F3571039}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4B8925B6-4042-4B1F-AA4D-F82531C9B948} = {4B8925B6-4042-4B1F-AA4D-F82531C9B948}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tapl_kernel", "tapl_kernel\tapl_kernel.vcxproj", "{4B8925B6-4042-4B1F-AA4D-F82531C9B948}"
 EndProject
