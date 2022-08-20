@@ -73,12 +73,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
-    <CodeAnalysisRuleSet>..\code_analysis_rules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
-    <CodeAnalysisRuleSet>..\code_analysis_rules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -115,7 +115,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalModuleDependencies>$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl.ixx.ifc;$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl_args.ixx.ifc;$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl_utility.ixx.ifc</AdditionalModuleDependencies>
+      <AdditionalModuleDependencies>$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl.ixx.ifc;$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl_utility.ixx.ifc</AdditionalModuleDependencies>
       <EnablePREfast>true</EnablePREfast>
     </ClCompile>
     <Link>
@@ -134,7 +134,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalModuleDependencies>$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl.ixx.ifc;$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl_args.ixx.ifc;$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl_utility.ixx.ifc</AdditionalModuleDependencies>
+      <AdditionalModuleDependencies>$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl.ixx.ifc;$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl_utility.ixx.ifc</AdditionalModuleDependencies>
       <EnablePREfast>true</EnablePREfast>
     </ClCompile>
     <Link>
