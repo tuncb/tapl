@@ -1,6 +1,8 @@
-#include <iostream>
+#include <catch2/catch_all.hpp>
 
-int main()
+int main(int argc, char *argv[])
 {
-  std::cout << "Hello World!\n";
+  int result = Catch::Session().run(argc, argv);
+
+  return result;
 }
