@@ -115,10 +115,16 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalBMIDirectories>
+      </AdditionalBMIDirectories>
+      <AdditionalModuleDependencies>$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl.ixx.ifc;$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl_utility.ixx.ifc;$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl_parser.ixx.ifc</AdditionalModuleDependencies>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>tapl_kernel.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)x64\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -129,6 +135,10 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalBMIDirectories>
+      </AdditionalBMIDirectories>
+      <AdditionalModuleDependencies>$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl.ixx.ifc;$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl_utility.ixx.ifc;$(SolutionDir)tapl_kernel\x64\$(ConfigurationName)\tapl_parser.ixx.ifc</AdditionalModuleDependencies>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,6 +149,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dummy_tests.cpp" />
+    <ClCompile Include="parser_tests.cpp" />
     <ClCompile Include="tapl_tester.cpp" />
   </ItemGroup>
   <ItemGroup>
