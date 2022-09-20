@@ -1,4 +1,7 @@
 use clap::Parser;
+use std::fs;
+use std::io;
+use std::io::ErrorKind;
 
 #[derive(Parser, Debug)]
 #[clap(author, version, about, long_about = None)]
@@ -9,14 +12,24 @@ struct Args {
     filename: Option<String>,
 }
 
-fn main() {
-    let args = Args::parse();
-    match args.code {
-        Some(x) => println!("Code: {x}"),
+fn get_code(args: Args) -> io::Result<String> {
+    match args.filename {
+        Some(x) => return fs::read_to_string(x),
         None => (),
     }
-    match args.filename {
-        Some(x) => println!("Filename: {x}"),
-        None => (),
+
+    match args.code {
+        Some(x) => return Ok(x),
+        None => return Err(io::Error::from(ErrorKind::InvalidInput)),
+    }
+}
+
+fn main() {
+    let args = Args::parse();
+    let code = get_code(args);
+
+    match code {
+        Ok(x) => println!("Code = {}", x),
+        Err(error) => println!("Error loading input, {}", error),
     }
 }
