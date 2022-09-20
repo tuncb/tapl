@@ -13,10 +13,10 @@ fn main() {
     let args = Args::parse();
     match args.code {
         Some(x) => println!("Code: {x}"),
-        None    => ()
+        None => (),
     }
     match args.filename {
         Some(x) => println!("Filename: {x}"),
-        None    => ()
+        None => (),
     }
 }
