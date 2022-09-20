@@ -36,3 +36,8 @@ x64/
 .vs/
 *.user
 vcpkg_installed/
+
+
+# Added by cargo
+
+/target
